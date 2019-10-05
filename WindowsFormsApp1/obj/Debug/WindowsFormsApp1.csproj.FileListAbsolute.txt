@@ -17,3 +17,6 @@ F:\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAss
 F:\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 F:\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 F:\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\Ordenador\Desktop\PY1_Orga\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe.config
+C:\Users\Ordenador\Desktop\PY1_Orga\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\Ordenador\Desktop\PY1_Orga\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.pdb
