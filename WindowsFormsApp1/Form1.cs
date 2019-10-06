@@ -27,8 +27,6 @@ namespace WindowsFormsApp1
             /*Abrir archivos .draw*/
 
             /* Crear pestaña con la informacion obtenida.*/
-            TabPage nuevoPage = new TabPage("1.draw");
-            tabControl1.Controls.Add(nuevoPage);
         }
     }
 }

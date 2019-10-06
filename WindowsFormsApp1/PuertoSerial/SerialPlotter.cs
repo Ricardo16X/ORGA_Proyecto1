@@ -8,11 +8,10 @@ namespace WindowsFormsApp1.PuertoSerial
 {
     class SerialPlotter
     {
-        public SerialPlotter()
-        {
-            SerialPort puerto = new SerialPort();
-            // Lógica para la comunicación del puerto serial
-            // para lamatriz de flip flops que se creará en la semana
+        public SerialPlotter(){
+        }
+
+        public void flujo_Datos(){
         }
     }
 }
