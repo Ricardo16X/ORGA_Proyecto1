@@ -20,3 +20,13 @@ F:\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateR
 C:\Users\Ordenador\Desktop\PY1_Orga\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe.config
 C:\Users\Ordenador\Desktop\PY1_Orga\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.exe
 C:\Users\Ordenador\Desktop\PY1_Orga\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.pdb
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe.config
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.pdb
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.pdb
