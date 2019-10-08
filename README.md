@@ -28,7 +28,7 @@ Por ultimo se le enviará un **bit de stop** que terminará la trama (paquete) d
 ## Autores ✒️
 
 * **Cristian Suy** - *[Coordinador] 201700918* - [CSuy](https://github.com/CSuy)
-* **Yelstin de León** - *201602836* - [F](https://github.com/)
+* **Yelstin de León** - *201602836* - [airton47](https://github.com/airton47)
 * **Ricardo Pérez** - *201700524* - [Ricardo16X](https://github.com/Ricardo16X)
 * **Byron Gómez** - *201700544* - [ByrCas](https://github.com/ByrCas)
 * **Diego Méndez** - *201712680* - [DiegoALbert6799](https://github.com/DiegoALbert6799)
