@@ -14,7 +14,10 @@ using System.Diagnostics;
 namespace WindowsFormsApp1{
 
     public partial class Form1 : Form{
-
+        string figura = "";
+        string color = "";
+        string fuente = "";
+        Button[,] boton2 = new Button[11, 19];
         public Form1(){
             InitializeComponent();
             
@@ -195,6 +198,163 @@ namespace WindowsFormsApp1{
         {
             //ABRIR DOCUMENTACIÓN DE CIRCUITOS
             abrir_documento(".pdf");
+        }
+
+        private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            TabPage tabpage1 = new TabPage();
+            int x = 140, y = 0;
+            for (int i = 0; i < 11; i++)
+            {
+                for (int j = 0; j < 19; j++)
+                {
+                    if (j < 16 && i < 8)
+                    {
+                        boton2[i, j] = new Button();
+                        boton2[i, j].SetBounds(x, y, 35, 35);
+                        boton2[i, j].Click += new EventHandler(button1_MouseClick);
+                        tabpage1.Controls.Add(boton2[i, j]);
+                        boton2[i, j].Location = new Point(x,y);
+                        y = y + 35;
+                    }
+                    else
+                    {
+                        boton2[i, j] = new Button();
+                    }
+                }
+                y = 0;
+                x = x + 35;
+            }
+            tabControl1.Controls.Add(tabpage1);
+        }
+
+        private void button1_MouseClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            for (int i = 0; i < 8; i++)
+            {
+                boton2[i, 10].BackColor = Color.Black;
+            }
+            boton2[0, 9].BackColor = Color.Black;
+            boton2[7, 9].BackColor = Color.Black;
+            boton2[1, 8].BackColor = Color.Black;
+            boton2[6, 8].BackColor = Color.Black;
+            boton2[2, 7].BackColor = Color.Black;
+            boton2[5, 7].BackColor = Color.Black;
+            boton2[3, 6].BackColor = Color.Black;
+            boton2[4, 6].BackColor = Color.Black;
+            for (int i = 0; i < 8; i++)
+            {
+                boton2[i, 10].Text = "1";
+            }
+            boton2[0, 9].Text = "1";
+            boton2[7, 9].Text = "1";
+            boton2[1, 8].Text = "1";
+            boton2[6, 8].Text = "1";
+            boton2[2, 7].Text = "1";
+            boton2[5, 7].Text = "1";
+            boton2[3, 6].Text = "1";
+            boton2[4, 6].Text = "1";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            for (int i = 2; i < 6; i++)
+            {
+                boton2[i, 3].BackColor = Color.Black;
+                boton2[i, 10].BackColor = Color.Black;
+            }
+            for (int i = 4; i < 8; i++)
+            {
+                boton2[0, i + 1].BackColor = Color.Black;
+                boton2[7, i + 1].BackColor = Color.Black;
+            }
+            boton2[1, 4].BackColor = Color.Black;
+            boton2[6, 4].BackColor = Color.Black;
+            boton2[1, 9].BackColor = Color.Black;
+            boton2[6, 9].BackColor = Color.Black;
+            for (int i = 2; i < 6; i++)
+            {
+                boton2[i, 3].Text = "1";
+                boton2[i, 10].Text = "1";
+            }
+            for (int i = 4; i < 8; i++)
+            {
+                boton2[0, i + 1].Text = "1";
+                boton2[7, i + 1].Text = "1";
+            }
+            boton2[1, 4].Text = "1";
+            boton2[6, 4].Text = "1";
+            boton2[1, 9].Text = "1";
+            boton2[6, 9].Text = "1";
+        }
+
+        private void limpiar()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 16; j++)
+                {
+                    boton2[i, j].BackColor = Color.Transparent;
+                    boton2[i, j].Text = "";
+                }
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            for (int i = 1; i < 7; i++)
+            {
+                boton2[i, 5].BackColor = Color.Black;
+                boton2[i, 10].BackColor = Color.Black;
+            }
+            for (int i = 5; i < 11; i++)
+            {
+                boton2[1, i].BackColor = Color.Black;
+                boton2[6, i].BackColor = Color.Black;
+            }
+            for (int i = 1; i < 7; i++)
+            {
+                boton2[i, 5].Text = "1";
+                boton2[i, 10].Text = "1";
+            }
+            for (int i = 5; i < 11; i++)
+            {
+                boton2[1, i].Text = "1";
+                boton2[6, i].Text = "1";
+            }
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            for (int i = 3; i < 13; i++)
+            {
+                boton2[3, i].BackColor = Color.Black;
+                boton2[4, i].BackColor = Color.Black;
+            }
+            for (int i = 3; i < 13; i++)
+            {
+                boton2[3, i].Text = "1";
+                boton2[4, i].Text = "1";
+            }
         }
     }
 }
