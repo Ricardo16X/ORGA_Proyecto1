@@ -117,7 +117,9 @@ namespace WindowsFormsApp1{
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Cambios de prueba para los commits
             //PASAR EL CONTENIDO GENERADO DEL DIBUJO:
+            MessageBox.Show("hello");
             guardar_como("texto de prueba");
         }
 
