@@ -17,6 +17,7 @@ namespace WindowsFormsApp1{
         string figura = "";
         string color = "";
         string fuente = "";
+        bool controlCoordenadas = false;
         Button[,] boton2 = new Button[11, 19];
         public Form1(){
             InitializeComponent();
@@ -117,7 +118,9 @@ namespace WindowsFormsApp1{
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Cambios de prueba para los commits
             //PASAR EL CONTENIDO GENERADO DEL DIBUJO:
+            MessageBox.Show("hello");
             guardar_como("texto de prueba");
         }
 
@@ -355,6 +358,28 @@ namespace WindowsFormsApp1{
                 boton2[3, i].Text = "1";
                 boton2[4, i].Text = "1";
             }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Imprimir()
+        {
+
+            button2.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button2.Visible = true;
+            Imprimir();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            controlCoordenadas = true;
         }
     }
 }
