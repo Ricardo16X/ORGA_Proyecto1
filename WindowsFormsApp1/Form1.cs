@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -10,6 +11,7 @@ using System.Windows.Forms;
 //Manejo de Ficheros
 using System.IO;
 using System.Diagnostics;
+using System.Threading;
 
 namespace WindowsFormsApp1{
 
@@ -17,8 +19,10 @@ namespace WindowsFormsApp1{
         string figura = "";
         string color = "";
         string fuente = "";
+        int temp = 0;
         bool controlCoordenadas = false;
         Button[,] boton2 = new Button[11, 19];
+        ArrayList coordenadas = new ArrayList();
         public Form1(){
             InitializeComponent();
             
@@ -367,19 +371,80 @@ namespace WindowsFormsApp1{
 
         private void Imprimir()
         {
-
             button2.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             button2.Visible = true;
+            temp = 0;
+            string nombre = "", aux_coor = "";
+            if(coordenadas.Count > 0)
+            {
+                coordenadas.Clear();
+            }
+            try
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 15; j++)
+                    {
+                        nombre = boton2[i, j].Text;
+                        if (nombre.Equals("1"))
+                        {
+                            aux_coor = i + "," + j;
+                            coordenadas.Add(aux_coor);
+                        }
+                    }
+                }
+                MessageBox.Show("La cantidad de coordenadas captadas son: " + coordenadas.Count);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("error: " + ex);
+            }
             Imprimir();
+            Mandar_Coordenadas(temp);
+        }
+
+        public void Mandar_Coordenadas(int pos)
+        {
+
+            if (pos == coordenadas.Count)
+            {
+                MessageBox.Show("Ya se Imprimieron todas las coordenadas");
+            }
+            else if (pos + 3 > coordenadas.Count)
+            {
+                for (int i = pos; i < coordenadas.Count; i++)
+                {
+                    MessageBox.Show("Las Coordenadas son: (" + coordenadas[i] + ")");
+                    temp++;
+                    Thread.Sleep(4000);
+                }
+                MessageBox.Show("Se Concluyo con exito");
+            }
+            else
+            {
+                for (int i = pos; i < pos+3; i++)
+                {
+                    MessageBox.Show("Las Coordenadas son: (" + coordenadas[i] + ")");
+                    temp++;
+                    Thread.Sleep(4000);
+                }
+                MessageBox.Show("Presione Continuar Impresion cuando este listo para continuar");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             controlCoordenadas = true;
+            Mandar_Coordenadas(temp);
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

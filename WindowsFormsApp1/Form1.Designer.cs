@@ -139,6 +139,7 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(66, 25);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // manualDeUsoToolStripMenuItem
             // 
@@ -147,7 +148,7 @@
             this.manualDeUsuarioToolStripMenuItem,
             this.documentaciónToolStripMenuItem});
             this.manualDeUsoToolStripMenuItem.Name = "manualDeUsoToolStripMenuItem";
-            this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.manualDeUsoToolStripMenuItem.Text = "Manuales";
             this.manualDeUsoToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsoToolStripMenuItem_Click);
             // 
@@ -175,7 +176,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.acercaDeToolStripMenuItem.Text = "Acerca De";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
