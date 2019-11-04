@@ -30,3 +30,23 @@ C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\
 C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.exe
 C:\Users\Byron Gerardo\Desktop\ORGA_Proyecto1-master\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.pdb
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe.config
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.pdb
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\MiriamLeticia\Desktop\Codigos\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.pdb
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe.config
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\bin\Debug\Comunicacion_PuertoSerial.pdb
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.exe
+C:\Users\aiyel\Desktop\USAC\Orga\Laboratorio\Proyecto 01\ORGA_Proyecto1\WindowsFormsApp1\obj\Debug\Comunicacion_PuertoSerial.pdb
