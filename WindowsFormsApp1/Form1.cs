@@ -197,7 +197,7 @@ namespace WindowsFormsApp1{
         private void manualDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //ABRIR MANUAL DE USUARIO
-            abrir_documento(".pdf");
+            abrir_documento("usuario.pdf");
         }
 
         private void documentaciónToolStripMenuItem_Click(object sender, EventArgs e)
