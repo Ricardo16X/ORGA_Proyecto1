@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using System.Threading;
+using System.IO.Ports;
 
 namespace WindowsFormsApp1{
 
@@ -23,6 +24,7 @@ namespace WindowsFormsApp1{
         bool controlCoordenadas = false;
         Button[,] boton2 = new Button[11, 19];
         ArrayList coordenadas = new ArrayList();
+        SerialPort puerto = new SerialPort();
         public Form1(){
             InitializeComponent();
             
@@ -128,7 +130,6 @@ namespace WindowsFormsApp1{
             guardar_como("texto de prueba");
         }
 
-
         public void guardar_en_Draw(String contenido)
         {
                 try
@@ -173,8 +174,6 @@ namespace WindowsFormsApp1{
         {
             MessageBox.Show("*Desarrolladores" + Environment.NewLine + "Cristian Suy -[Coordinador] 201700918." + Environment.NewLine + "Yelstin de León - 201602836. " + Environment.NewLine + "Ricardo Pérez - 201700524. " + Environment.NewLine + "Byron Gómez - 201700544. " + Environment.NewLine + "Diego Méndez - 201712680", "Acerca De", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-
 
         public void abrir_documento(String nombre_archivo){
             Process aperturar = new Process();
@@ -243,6 +242,22 @@ namespace WindowsFormsApp1{
                 x = x + 35;
             }
             tabControl1.Controls.Add(tabpage1);
+            try
+            {
+                puerto.BaudRate = 8;
+                puerto.DataBits = 7;
+                puerto.Parity = Parity.None;
+                puerto.DiscardNull = true;
+                puerto.StopBits = StopBits.One;
+                puerto.PortName = "COM1";
+                puerto.Open();
+                MessageBox.Show("Puerto abierto");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show(".");
+            }
         }
 
         private void button1_MouseClick(object sender, EventArgs e)
@@ -409,7 +424,6 @@ namespace WindowsFormsApp1{
 
         public void Mandar_Coordenadas(int pos)
         {
-
             if (pos == coordenadas.Count)
             {
                 MessageBox.Show("Ya se Imprimieron todas las coordenadas");
@@ -418,9 +432,10 @@ namespace WindowsFormsApp1{
             {
                 for (int i = pos; i < coordenadas.Count; i++)
                 {
-                    MessageBox.Show("Las Coordenadas son: (" + coordenadas[i] + ")");
-                    temp++;
+                    //MessageBox.Show("Las Coordenadas son: (" + coordenadas[i] + ")");
                     Thread.Sleep(4000);
+                    com_serial(Convert.ToString(coordenadas[i]));
+                    temp++;
                 }
                 MessageBox.Show("Se Concluyo con exito");
             }
@@ -428,11 +443,12 @@ namespace WindowsFormsApp1{
             {
                 for (int i = pos; i < pos+3; i++)
                 {
-                    MessageBox.Show("Las Coordenadas son: (" + coordenadas[i] + ")");
-                    temp++;
+                    //MessageBox.Show("Las Coordenadas son: (" + coordenadas[i] + ")");
                     Thread.Sleep(4000);
+                    com_serial(Convert.ToString(coordenadas[i]));
+                    temp++;
                 }
-                MessageBox.Show("Presione Continuar Impresion cuando este listo para continuar");
+                MessageBox.Show("Presione \"Continuar Impresion\" cuando este listo para continuar");
             }
         }
 
@@ -445,6 +461,86 @@ namespace WindowsFormsApp1{
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void com_serial(string coor123)
+        {
+            string[] datos = coor123.Split(',');
+            byte[] num = new byte[1];
+            int coordenaFinal = 0;
+            try
+            {
+                int X_1 = Convert.ToInt32(datos[0]);
+                int Y_1 = Convert.ToInt32(datos[1]);
+                switch (X_1)
+                {
+                    case 0:
+                        coordenaFinal = Y_1;
+                        break;
+                    case 1:
+                        coordenaFinal = 16 + Y_1;
+                        break;
+                    case 2:
+                        coordenaFinal = 32 + Y_1;
+                        break;
+                    case 3:
+                        coordenaFinal = 32 + 16 + Y_1;
+                        break;
+                    case 4:
+                        coordenaFinal = 64 + Y_1;
+                        break;
+                    case 5:
+                        coordenaFinal = 64 + 16 + Y_1;
+                        break;
+                    case 6:
+                        coordenaFinal = 64 + 32 + Y_1;
+                        break;
+                    case 7:
+                        coordenaFinal = 64 + 32 + 16 + Y_1;
+                        break;
+                    default:
+                        MessageBox.Show("Rango de para X: 0<X<7");
+                        break;
+                }
+                num[0] = Convert.ToByte(coordenaFinal);
+                //MessageBox.Show("La Coordenada Mandada fue: (" + coor123 + ") \n Su Numero Binario en decimal: " + num[0].ToString());
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+            try
+            {
+                if (puerto.IsOpen)
+                {
+                    puerto.Write(num, 0, 1);
+                    //MessageBox.Show(num[0].ToString());
+                }
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+                throw;
+            }
+        }
+
+        private void btnCorrimiento_Click(object sender, EventArgs e)
+        {
+            byte[] num = new byte[1];
+            num[0] = Convert.ToByte(0);
+            try
+            {
+                if (puerto.IsOpen)
+                {
+                    puerto.Write(num, 0, 1);
+                    MessageBox.Show(num[0].ToString());
+                }
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+                throw;
+            }
         }
     }
 }

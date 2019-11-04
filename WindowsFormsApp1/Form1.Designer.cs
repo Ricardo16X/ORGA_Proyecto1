@@ -54,6 +54,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnCorrimiento = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -148,7 +149,7 @@
             this.manualDeUsuarioToolStripMenuItem,
             this.documentaciónToolStripMenuItem});
             this.manualDeUsoToolStripMenuItem.Name = "manualDeUsoToolStripMenuItem";
-            this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
             this.manualDeUsoToolStripMenuItem.Text = "Manuales";
             this.manualDeUsoToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsoToolStripMenuItem_Click);
             // 
@@ -176,7 +177,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
             this.acercaDeToolStripMenuItem.Text = "Acerca De";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
@@ -308,12 +309,23 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnCorrimiento
+            // 
+            this.btnCorrimiento.Location = new System.Drawing.Point(346, 706);
+            this.btnCorrimiento.Name = "btnCorrimiento";
+            this.btnCorrimiento.Size = new System.Drawing.Size(75, 23);
+            this.btnCorrimiento.TabIndex = 6;
+            this.btnCorrimiento.Text = "Clock";
+            this.btnCorrimiento.UseVisualStyleBackColor = true;
+            this.btnCorrimiento.Click += new System.EventHandler(this.btnCorrimiento_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 741);
+            this.Controls.Add(this.btnCorrimiento);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
@@ -369,6 +381,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCorrimiento;
     }
 }
 
